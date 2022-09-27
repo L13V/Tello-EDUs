@@ -57,7 +57,7 @@ def handler(signum, frame):
             termcolor.cprint('Resuming Show', 'yellow')
         else:
             print('Incorrect Number Pressed \nLeaving Page')
-#EMERGENCY drop all drones
+#EMERGENCY drop all drones1
 
     elif resmenu == '3':
         termcolor.cprint('EMERGENCY DROP INITIATED \n be Careful! \n Initializing Low Latency Control', 'red')
