@@ -51,6 +51,41 @@ def send(message, delay):
   # Delay for a user-defined period of time
   time.sleep(delay)
 
+def sendto1(message, delay):
+  # Try to send the message otherwise print the exception
+  try:
+    sock1.sendto(message.encode(), tello1_address)
+    termcolor.cprint("Sending message to tello 3: " + message, 'yellow')
+  except Exception as e:
+    print("Error sending: " + str(e))
+
+  # Delay for a user-defined period of time
+  time.sleep(delay)
+
+def sendto2(message, delay):
+  # Try to send the message otherwise print the exception
+  try:
+    sock2.sendto(message.encode(), tello2_address)
+    termcolor.cprint("Sending message to tello 2: " + message, 'yellow')
+  except Exception as e:
+    print("Error sending: " + str(e))
+
+  # Delay for a user-defined period of time
+  time.sleep(delay)
+
+def sendto3(message, delay):
+  # Try to send the message otherwise print the exception
+  try:
+    sock3.sendto(message.encode(), tello3_address)
+    termcolor.cprint("Sending message to tello 3: " + message, 'yellow')
+  except Exception as e:
+    print("Error sending: " + str(e))
+
+  # Delay for a user-defined period of time
+  time.sleep(delay)
+
+
+
 # Receive the message from Tello
 def receive():
   # Continuously loop and listen for incoming messages
