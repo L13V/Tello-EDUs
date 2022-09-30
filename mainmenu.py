@@ -142,7 +142,7 @@ def start():
     if resopen == '1':
         while True:
             print('Running Show')
-            import alltellos
+            import show
     if resopen == '2':
         while True:
             import liftoff
